@@ -28,9 +28,20 @@ println(coches2)
  */
 
 fun main(){
-    val readOnlyFiguras = ListOf("Cuadrado","Trinagulo","Circulo")
+    val readOnlyFiguras = listOf("cuadrado", "triangulo", "circulo")
     println(readOnlyFiguras)
-    println("La primera figura es ${readOnlyFiguras}")
+    println("La primera figura es ${readOnlyFiguras[0]}")
+    println("EL primer elemento es ${readOnlyFiguras.first()}")
+    println("NUmero de elmentos ${readOnlyFiguras.count()} itemes")
+    println("Circulo" in readOnlyFiguras)
+    println(readOnlyFiguras)
+    //ReadOnlyFiguras.add("pentagono)
+    var figura: MutableList<String> = mutableListOf("eventos", "trinagulo2", "circulo2")
+    println(figura)
+    figura.add("pentagono2")
+    println(figura)
+    figura.add("cuadrado2")
+    println(figura)
 }
 
 

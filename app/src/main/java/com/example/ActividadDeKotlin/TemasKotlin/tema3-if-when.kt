@@ -15,7 +15,7 @@ fun main(){
     val d2 = if (check) 1 else 2
     println(d2)
 
-    println("----------------------------------------------------------")
+    println("-------------------------------------------------------------")
     print("Ingrese el sueldo del empleado")
     val sueldo = readln().toDouble()
     if (sueldo > 3000) {
