@@ -1,4 +1,4 @@
-package com.example.introkotlin904
+package com.example.ActividadDeKotlin
 
 import org.junit.Test
 
