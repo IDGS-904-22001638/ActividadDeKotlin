@@ -1,6 +1,5 @@
 package com.example.ActividadDeKotlin
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -15,14 +14,17 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
         val btnEjemplo1 = findViewById<Button>(R.id.btn1)
-        val btnEjemplo2 = findViewById<Button>(R.id.btn2)
+        val btnCinepolis = findViewById<Button>(R.id.btn2)
+        val btnEjemplo2 = findViewById<Button>(R.id.btn3)
 
         btnEjemplo1.setOnClickListener {
-            navegateToEjemplo1()
+            navigateToEjemplo1()
         }
-
+        btnCinepolis.setOnClickListener {
+            navigateToCinepolisAndroid()
+        }
         btnEjemplo2.setOnClickListener {
-            navegateToEjemplo2()
+            navigateToEjemplo2()
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -32,13 +34,16 @@ class MenuActivity : AppCompatActivity() {
         }
     }
 
-    private fun navegateToEjemplo1(){
-        val intent = Intent(this, Ejemplo1Activity::class.java)
+    private fun navigateToEjemplo1() {
+        val intent = android.content.Intent(this, com.example.ActividadDeKotlin.Tema1App.Ejemplo1Activity::class.java)
         startActivity(intent)
     }
-
-    private fun navegateToEjemplo2(){
-        val intent = Intent(this, Ejemplo2Activity::class.java)
+    private fun navigateToCinepolisAndroid() {
+        val intent = android.content.Intent(this, com.example.ActividadDeKotlin.Cinepolis.cinepolisAndroid::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToEjemplo2() {
+        val intent = android.content.Intent(this, com.example.ActividadDeKotlin.Tem2App.Ejemplo2Activity::class.java)
         startActivity(intent)
     }
 }

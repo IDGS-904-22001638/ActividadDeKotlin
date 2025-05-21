@@ -6,19 +6,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="16dp"
     tools:context=".MenuActivity">
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="380dp"
+        android:layout_width="365dp"
         android:layout_height="wrap_content"
-        android:text="Ejemplo 1"
+        android:text="Ejemplo1"
         />
-
     <Button
         android:id="@+id/btn2"
-        android:layout_width="380dp"
+        android:layout_width="365dp"
         android:layout_height="wrap_content"
-        android:text="Ejemplo 2"
+        android:text="Cinepolis"
         />
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo2"
+        />
+
 </LinearLayout>
