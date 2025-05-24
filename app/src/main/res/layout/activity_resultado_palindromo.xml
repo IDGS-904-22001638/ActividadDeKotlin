@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/originalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Original"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/reversedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Al revez"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/vowelsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vocales"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/consonantsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Consonantes"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
