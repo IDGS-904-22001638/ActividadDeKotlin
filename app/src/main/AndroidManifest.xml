@@ -13,6 +13,36 @@
         android:theme="@style/Theme.ActividadDeKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".Diccionario.BuscarPalabraActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Diccionario.AgregarPalabraActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Diccionario.DiccionarioAndroid"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Palindromo.ResultadoActivity"
             android:exported="true">
             <intent-filter>
